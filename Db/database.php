@@ -4,7 +4,7 @@ include __DIR__ . '/../models/Product.php';
 
 $arrayProducts = [
   new Product('Croccantini'),
-  new Product('Cuccia'),
+  new Food('Cuccia', '12/05/24'),
   new Games('Pallina')
 ];
 
