@@ -1,13 +1,19 @@
-<div class="col shadow-sm mb-4">
-  
+<div class="col shadow-sm mb-4 text-dark">
+
   <div class="card w-100 h-100" style="width: 18rem;">
 
+    <!-- Image output -->
     <?php echo $product->getImage(); ?>
 
     <div class="card-body d-flex flex-column">
 
+      <!-- Product name output -->
       <h5 class="card-title"><?php echo $product->getName(); ?></h5>
+
+      <!-- Brand output -->
       <span class="card-text">Brand: <?php echo $product->getBrand(); ?></span>
+
+      <!-- Price output -->
       <span class="card-text">Prezzo: <?php echo $product->getPrice(); ?></span>
 
       <div class="pg-animal-container d-flex align-items-center my-2">
@@ -15,6 +21,7 @@
         <span class="card-text rounded-2 bg-danger px-2 text-white"><?php echo $product->getAnimal(); ?></span>
       </div>
 
+      <!-- If with conditions on type for output using exclusive class functions -->
       <?php if($product->type === 'food'){ ?>
 
         <span class="card-text"><span class="fs-5">Lista degli ingredienti:</span> <?php echo $product->getIngrediets(); ?></span>
