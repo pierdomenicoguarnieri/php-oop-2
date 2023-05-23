@@ -1,9 +1,7 @@
 <?php 
 
-require_once "../Db/database.php";
-require_once "head.php";
-require_once "layouts/body.php";
-
-
+include "../Db/database.php";
+include "head.php";
+include "layouts/body.php";
 
 ?>
