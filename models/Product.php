@@ -3,17 +3,23 @@
 class Product
 {
   private $name;
+  public $type;
   private $price;
   private $brand;
   private $image;
   private $animal;
 
-  function __construct($_name){
+  function __construct($_name, $_type){
     $this->name = $_name;
+    $this->type = $_type;
   }
 
   public function getName(){
     return $this->name;
+  }
+
+  public function getType(){
+    return $this->type;
   }
 
   public function setPrice($_price){
@@ -21,7 +27,11 @@ class Product
   }
 
   public function getPrice(){
-    return number_format($this->price, '.', "") . ' €';
+    if(is_float($this->price)){
+      return $this->price . ' €';
+    }else{
+      return $this->price . '.00 €';
+    }
   }
 
   public function setBrand($_brand){
@@ -37,7 +47,7 @@ class Product
   }
 
   public function getImage(){
-    return "<img src='$this->image' alt='Product Image' title='Product Image'>";
+    return "<img src='$this->image' alt='Product Image' class='card-img-top' title='Product Image'>";
   }
 
   public function setAnimal($_animal){
