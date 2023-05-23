@@ -59,6 +59,7 @@ class Product
   }
 }
 
+// Include of Class with extend
 include __DIR__ . "/Games.php";
 include __DIR__ . "/Kennel.php";
 include __DIR__ . "/Food.php";
