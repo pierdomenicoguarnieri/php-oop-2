@@ -5,7 +5,7 @@ include __DIR__ . '/../models/Product.php';
 $arrayProducts = [
   new Product('Croccantini'),
   new Product('Cuccia'),
-  new Product('Pallina')
+  new Games('Pallina')
 ];
 
 $arrayProducts[0]->setPrice(25);
