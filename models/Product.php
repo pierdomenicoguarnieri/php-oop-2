@@ -12,6 +12,10 @@ class Product
     $this->name = $_name;
   }
 
+  public function getName(){
+    return $this->name;
+  }
+
   public function setPrice($_price){
     $this->price = $_price;
   }
@@ -44,3 +48,7 @@ class Product
     return $this->animal;
   }
 }
+
+include __DIR__ . "/Games.php";
+include __DIR__ . "/Kennel.php";
+include __DIR__ . "/Food.php";
