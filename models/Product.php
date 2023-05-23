@@ -47,7 +47,7 @@ class Product
   }
 
   public function getImage(){
-    return "<img src='$this->image' alt='Product Image' class='card-img-top' title='Product Image'>";
+    return "<img src='$this->image' alt='$this->name' class='card-img-top p-4' title='$this->name'>";
   }
 
   public function setAnimal($_animal){
