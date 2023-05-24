@@ -20,6 +20,12 @@ $arrayKennel = [
   new Kennel('Cuccia per cani HAFENBANDE Cottage', 'kennel')
 ];
 
+$arrayAccessories = [
+  new Accessories('Guinzaglio avvolgibile a fettuccia flexi New Classic M, 5 m', 'accessory', 'Guinzaglio'),
+  new Accessories('Collare Hunter London arancione', 'accessory', 'Collare'),
+  new Accessories('Collare per gatti Karlie Art Sportiv', 'accessory', 'Collare')
+];
+
 // Array Food
 $arrayFood[0]->setPrice(30);
 $arrayFood[0]->setBrand('Royal Canin');
@@ -86,3 +92,24 @@ $arrayKennel[2]->setImage('https://shop-cdn-m.mediazs.com/bilder/cuccia/per/cani
 $arrayKennel[2]->setAnimal('Cani');
 $arrayKennel[2]->setOutside(true);
 $arrayKennel[2]->setMaterial(['Plastica']);
+
+// Array Accessories
+$arrayAccessories[0]->setPrice(11.99);
+$arrayAccessories[0]->setBrand('Flexi');
+$arrayAccessories[0]->setImage('https://shop-cdn-m.mediazs.com/bilder/guinzaglio/avvolgibile/a/fettuccia/flexi/new/classic/m/m/3/400/198008_pla_flexi_newclassic_gurtleine_m_schwarz_hs_02_3.jpg');
+$arrayAccessories[0]->setAnimal('Cani');
+$arrayAccessories[0]->setMaterial(['Plastica', 'Tessuto']);
+
+////////////////////////////////
+$arrayAccessories[1]->setPrice(5.99);
+$arrayAccessories[1]->setBrand('Hunter');
+$arrayAccessories[1]->setImage('https://shop-cdn-m.mediazs.com/bilder/collare/hunter/london/arancione/5/400/164805_164806_pla_hunter_halsband_london_orange_hs_01_5.jpg');
+$arrayAccessories[1]->setAnimal('Cani');
+$arrayAccessories[1]->setMaterial(['Plastica', 'Tessuto']);
+
+////////////////////////////////
+$arrayAccessories[2]->setPrice(7.99);
+$arrayAccessories[2]->setBrand('Karlie Art Sportiv');
+$arrayAccessories[2]->setImage('https://shop-cdn-m.mediazs.com/bilder/collare/per/gatti/karlie/art/sportiv/8/400/225997_225996_225896_karlie_art_sportiv_katzenhalsband_blau_rosa_pink_hs_01_8.jpg');
+$arrayAccessories[2]->setAnimal('Gatti');
+$arrayAccessories[2]->setMaterial(['Plastica', 'Tessuto']);

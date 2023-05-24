@@ -55,7 +55,8 @@ class Product
   }
 
   public function getAnimal(){
-    return $this->animal;
+    $this->animal === 'Cani' ? $string = '<span class="card-text rounded-2 bg-danger px-2 text-white"><i class="fa-solid fa-dog me-1" style="color: #ffffff;"></i> ' . $this->animal .'</span>' : $string = '<span class="card-text rounded-2 bg-danger px-2 text-white"><i class="fa-solid fa-cat me-1" style="color: #ffffff;"></i>' . $this->animal . '</span>';
+    return $string;
   }
 }
 
@@ -63,3 +64,4 @@ class Product
 include __DIR__ . "/Games.php";
 include __DIR__ . "/Kennel.php";
 include __DIR__ . "/Food.php";
+include __DIR__ . "/Accessories.php";

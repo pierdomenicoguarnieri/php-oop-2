@@ -36,6 +36,17 @@
             
             ?>
           </div>
+
+          <h2>Accessories</h2>
+          <div class="row row-cols-4 w-100 mt-2">
+            <?php 
+            
+              foreach($arrayAccessories as $product){
+                include __DIR__ . "/card.php";
+              }
+            
+            ?>
+          </div>
         </div>
       </div>
     </main>
