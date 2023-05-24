@@ -18,11 +18,7 @@
     }
 
     public function getIngrediets(){
-      $string = "";
-      foreach ($this->ingredients as $index => $ingredient){
-        $index < (count($this->ingredients) - 1) ? $string .= $ingredient . ', ' : $string .= $ingredient;
-      }
-      return $string;
+      return $this->ingredients;
     }
   }
 ?>

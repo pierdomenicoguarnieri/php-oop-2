@@ -21,11 +21,7 @@ class Product
   }
 
   public function getPrice(){
-    if(is_float($this->price)){
-      return $this->price . ' €';
-    }else{
-      return $this->price . '.00 €';
-    }
+    return number_format($this->price, 2, ',','.') . ' €';
   }
 
   public function setBrand($_brand){

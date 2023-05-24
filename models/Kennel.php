@@ -22,11 +22,7 @@
     }
 
     public function getMaterial(){
-      $string = "";
-      foreach ($this->materials as $index => $material){
-        $index < (count($this->materials) - 1) ? $string .= $material . ', ' : $string .= $material;
-      }
-      return $string;
+      return $this->materials;
     }
   }
 ?>
