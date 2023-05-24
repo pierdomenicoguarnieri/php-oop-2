@@ -17,7 +17,7 @@ $arrayGames = [
 $arrayKennel = [
   new Kennel('Letto per cani Cozy ecoLIFE grigio', 'kennel'),
   new Kennel('Letto Cozy Kingdom', 'kennel'),
-  new Kennel('Cuccia per cani e gatti HAFENBANDE Cottage', 'kennel')
+  new Kennel('Cuccia per cani HAFENBANDE Cottage', 'kennel')
 ];
 
 // Array Food

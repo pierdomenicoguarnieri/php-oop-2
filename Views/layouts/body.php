@@ -1,7 +1,7 @@
   <body>
     <main>
       <div class="pg-wrapper min-vh-100 w-100 bg-dark py-5">
-        <h1 class="text-white text-center">Weclome to BoolPets!</h1>
+        <h1 class="text-white text-center">Welcome to BoolPets!</h1>
         <div class="container d-flex flex-column text-white py-5">
 
           <h2>Food</h2>
