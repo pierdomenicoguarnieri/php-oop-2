@@ -4,8 +4,8 @@
     private $isForOutside;
     private $materials;
 
-    function __construct($_name, $_type){
-      parent::__construct($_name, $_type);
+    function __construct($_name){
+      parent::__construct($_name);
     }
 
     public function setOutside($_isForOutside){

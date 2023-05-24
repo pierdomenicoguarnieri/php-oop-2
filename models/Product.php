@@ -3,23 +3,17 @@
 class Product
 {
   private $name;
-  public $type;
   private $price;
   private $brand;
   private $image;
   private $animal;
 
-  function __construct($_name, $_type){
+  function __construct($_name){
     $this->name = $_name;
-    $this->type = $_type;
   }
 
   public function getName(){
     return $this->name;
-  }
-
-  public function getType(){
-    return $this->type;
   }
 
   public function setPrice($_price){

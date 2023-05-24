@@ -4,9 +4,9 @@
     private $typeOfAccessory;
     private $materials;
 
-    function __construct($_name, $_type, $_typeOfAccessory){
+    function __construct($_name, $_typeOfAccessory){
       $this->typeOfAccessory = $_typeOfAccessory;
-      parent::__construct($_name, $_type);
+      parent::__construct($_name);
     }
 
     public function getTypeOfAccessory(){

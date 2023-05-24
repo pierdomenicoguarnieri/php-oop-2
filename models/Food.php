@@ -4,9 +4,9 @@
     private $expiryDate;
     private $ingredients;
 
-    function __construct($_name, $_type, $_expiryDate){
+    function __construct($_name, $_expiryDate){
       $this->expiryDate = $_expiryDate;
-      parent::__construct($_name, $_type);
+      parent::__construct($_name);
     }
 
     public function getExipryDate(){

@@ -22,23 +22,23 @@
       </div>
 
       <!-- If with conditions on type for output using exclusive class functions -->
-      <?php if($product->type === 'food'){ ?>
+      <?php if(get_class($product) === 'Food'){ ?>
 
         <span class="card-text"><span class="fw-bold">Lista degli ingredienti: </span><?php echo $product->getIngrediets(); ?></span>
         <span class="card-text"><span class="fw-bold">Data di scadenza: </span><?php echo $product->getExipryDate(); ?></span>
 
-      <?php }elseif($product->type === 'games'){ ?>
+      <?php }elseif(get_class($product) === 'Games'){ ?>
 
         <span class="card-text"><span class="fw-bold">Lista dei materiali: </span><?php echo $product->getMaterial(); ?></span>
 
-      <?php }elseif($product->type === 'kennel'){ ?>
+      <?php }elseif(get_class($product) === 'Kennel'){ ?>
 
         <div class="pg-outside-flag-container d-flex align-items-center my-2">
           <span class="card-text rounded-2 bg-warning px-2"><?php echo $product->getOutside(); ?></span>
         </div>
         <span class="card-text"><span class="fw-bold">Lista dei materiali: </span><?php echo $product->getMaterial(); ?></span>
 
-      <?php }elseif($product->type === 'accessory'){ ?>
+      <?php }elseif(get_class($product) === 'Accessories'){ ?>
 
         <span class="card-text"><span class="fw-bold">Categoria: </span><?php echo $product->getTypeOfAccessory(); ?></span>
         <span class="card-text"><span class="fw-bold">Lista dei materiali: </span><?php echo $product->getMaterial(); ?></span>
