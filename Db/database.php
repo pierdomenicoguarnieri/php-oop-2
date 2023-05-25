@@ -3,27 +3,27 @@
 include __DIR__ . '/../models/Product.php';
 
 $arrayFood = [
-  new Food('Royal Canin Maxi Adult Crocchette per cani', 'food', '12/05/24'),
-  new Food('Purina ONE Dual Nature Sterilized Salmone con Spirulina Crocchette per gatti', 'food', '18/12/24'),
-  new Food('Gourmet Gold Paté 24 x 85 g Alimento umido per gatti', 'food', '14/09/23')
+  new Food('Royal Canin Maxi Adult Crocchette per cani', '12/05/24'),
+  new Food('Purina ONE Dual Nature Sterilized Salmone con Spirulina Crocchette per gatti', '18/12/24'),
+  new Food('Gourmet Gold Paté 24 x 85 g Alimento umido per gatti', '14/09/23')
 ];
 
 $arrayGames = [
-  new Games('Pallina da tennis in gomma 2in1', 'games'),
-  new Games('Gioco per cani Ferplast Puller', 'games'),
-  new Games('Base con giochi Wild Mouse con sonoro e LED', 'games')
+  new Games('Pallina da tennis in gomma 2in1'),
+  new Games('Gioco per cani Ferplast Puller'),
+  new Games('Base con giochi Wild Mouse con sonoro e LED')
 ];
 
 $arrayKennel = [
-  new Kennel('Letto per cani Cozy ecoLIFE grigio', 'kennel'),
-  new Kennel('Letto Cozy Kingdom', 'kennel'),
-  new Kennel('Cuccia per cani HAFENBANDE Cottage', 'kennel')
+  new Kennel('Letto per cani Cozy ecoLIFE grigio'),
+  new Kennel('Letto Cozy Kingdom'),
+  new Kennel('Cuccia per cani HAFENBANDE Cottage')
 ];
 
 $arrayAccessories = [
-  new Accessories('Guinzaglio avvolgibile a fettuccia flexi New Classic M, 5 m', 'accessory', 'Guinzaglio'),
-  new Accessories('Collare Hunter London arancione', 'accessory', 'Collare'),
-  new Accessories('Collare per gatti Karlie Art Sportiv', 'accessory', 'Collare')
+  new Accessories('Guinzaglio avvolgibile a fettuccia flexi New Classic M, 5 m', 'Guinzaglio'),
+  new Accessories('Collare Hunter London arancione', 'Collare'),
+  new Accessories('Collare per gatti Karlie Art Sportiv', 'Collare')
 ];
 
 // Array Food
